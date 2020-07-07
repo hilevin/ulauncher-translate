@@ -33,7 +33,7 @@ def unescape(text):
 
 
 def translate(to_translate, to_language="auto", from_language="auto", wrap_len="80"):
-    base_link = "http://translate.google.com/m?hl=%s&sl=%s&q=%s"
+    base_link = "http://translate.google.cn/m?hl=%s&sl=%s&q=%s"
     if (sys.version_info[0] < 3):
         to_translate = urllib.quote_plus(to_translate)
         link = base_link % (to_language, from_language, to_translate)
